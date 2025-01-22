@@ -80,6 +80,13 @@ export interface SearchParams {
     sort?: string;
 }
 
+export interface ProductImages {
+    featured_image: string;
+    featured_video: string,
+    other_images: ProductGallery[],
+    gallery_images: ProductGallery[]
+}
+
 export interface ProductGallery {
     image: string;
     thumbnail: string;
